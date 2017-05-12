@@ -1,0 +1,121 @@
+body {
+  margin: 0; /* Убираем отступы на странице */
+  font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+  background: url(images/P5040154-min.jpg); /* Фон страницы */
+}
+
+header, section, footer, aside, nav, article {
+  display: block; /* Блочный элемент */
+}
+
+li{
+  padding:1px 0;
+}
+
+/* Шапка */
+/* -------------------------------------------------------------------------- */
+
+.header {
+  height: 100px; /* Высота шапки */
+  text-align: center; /* Выравнивание по центру */
+  line-height: 100px; /* Выравнивание по вертикали */
+  font-size: 58px;
+  color: #000000;
+}
+
+/* Основная часть */
+/* -------------------------------------------------------------------------- */
+
+.content-bg {
+  width: 760px; /* Ширина макета */
+  margin: auto; /* Выравнивание по центру */
+}
+.content-white {
+  background-color: rgba(253, 255, 248, 0.8); /* Белый цвет фона */
+  margin: 0 11px; /* Отступы по горизонтали */
+  padding: 20px 40px 110px; /* Поля */
+  text-align: justify; /* Выравнивание по ширине */
+  color: #010100;
+  font-size: 15px;
+}
+
+
+/* Подвал */
+/* -------------------------------------------------------------------------- */
+
+footer { 
+  margin-top: -213px; /* Поднимаем вверх */
+  overflow: auto; /* Отменяем схлопывающиеся отступы */
+  position: relative; /* Относительное позиционирование */
+ }
+.phone,.info  {
+  position: absolute; /* Абсолютное позиционирование */
+  left: 50%; /* По центру */
+  margin-left: -347px; /* Сдвигаем влево от центра */
+  top: 110px; /* Сдвиг вниз от верхнего края footer*/
+}
+.info{
+  margin-left: -240px; /* Сдвигаем влево от центра */
+  margin-top: 10px;
+  color: rgba(30, 34, 38, 0.96);
+}
+.footer-bg { 
+  margin-top: 180px; /* Сдвигаем вниз */
+  height: 100px;
+}
+.footer-bg>p {
+  width: 360px; /* Ширина макета без полей */
+  padding: 8px 0 0 490px; /* Поля */
+  margin: auto; /* Выравнивание по центру */
+}
+
+/* Блок с фото */
+/* -------------------------------------------------------------------------- */
+
+.photo {
+  margin:20px 0; /* Отступы */
+  min-height: 100px;
+  text-align: center;
+  position: relative;
+}
+.photo img{
+  cursor:pointer;
+  display: inline-block;
+}
+.photo img +img {
+  position: absolute;
+  left:-350px;
+  top:-50px;
+  z-index: 1;
+  display: none;
+  max-width:300px;
+}
+.photo img:hover + img{
+  display: block;
+}
+.photo ul{
+  padding: 5px 0 0 200px;
+  text-align:left;
+}
+
+/* Блок со ссылками */
+/* -------------------------------------------------------------------------- */
+
+a {
+  color: #1b75bc; /* Цвет ссылок */
+}
+
+a:hover {
+  color: #d6562b; /* Цвет ссылок при наведении */
+}
+
+/*a img {*/
+  /*border: none; !* Прячем границу вокруг изображений-ссылок *!*/
+/*}*/
+
+section h1 {
+  font-size: 1.5em; /* Размер текста */
+  font-weight: normal; /* Нормальное начертание */
+  margin-bottom: 0; /* Отступ снизу */
+}
+
